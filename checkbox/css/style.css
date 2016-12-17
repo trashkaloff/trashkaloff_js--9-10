@@ -1,0 +1,54 @@
+/* USING JQUERY */
+
+h2 {
+  font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+}
+
+.checkbox_jq,
+.checkbox_css {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background: url('../images/checkbox.png');
+    margin-right: 10px;
+}
+
+.checkbox input {
+    display: none;
+}
+
+/* CSS */
+
+.checkbox_css input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.checkbox_css label {
+    display: inline-block;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox_css label:before {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url('../images/checkbox.png');
+    position: relative;
+    margin-right: 10px;
+}
+
+.checkbox_css input[type=checkbox]:checked + label:before {
+    background-position: 0 -17px;
+}

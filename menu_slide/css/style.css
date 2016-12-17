@@ -1,0 +1,100 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/**********Jcarousel plugin**********/
+.jcarousel {
+    margin: 80px auto;
+    position: relative;
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 150vw;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    float: left;
+}
+.jcarousel li img{
+  height: 400px;
+  width: 600px;
+}
+
+.flexBox{
+  display: flex;
+  justify-content: space-around;
+}
+.flexBox a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #666;
+}
+/********************************MENU *******/
+.menu{
+  height:40px;
+  width:100%;
+  background-color: #ff4d4d;
+}
+.menu li{
+  list-style: none;
+  float: left;
+  height:40px;
+  width: 230px;
+  text-align: center;
+  border-right: 1px solid black;
+  font-family: Arial;
+}
+
+.menu a:hover{
+color: rgb(50,50,50);
+
+}
+.menu a{
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+.submenu{
+  opacity: 0;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color:#ffdb4d;
+  margin-top: 12px;
+}
+.submenu li{
+  float: none;
+  height: 30px;
+  border-right: none;
+  border-top: 1px solid black;
+  font-size: 20px;
+  text-align: left;
+}
+.submenu li:hover{
+    background-color: rgb(119, 63, 63);
+}
+.submenu a{
+  font-size: 18px;
+  margin-left: 60px;
+}
+.submenu2{
+  position: absolute;
+  background-color: #99ff66;
+  margin-left: 230px;
+  margin-top: -24px;
+  z-index: 999;
+  display: none;
+}
+.submenu2 li{
+  margin-left: 0px;
+}
+.submenu2 li:hover{
+  background-color: #d6d6c2;
+}
+/*-----------------------------------------------------*/
